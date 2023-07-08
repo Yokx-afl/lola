@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Pour Lola...</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+		<link href="shlyukha.css" rel="stylesheet">
+		<link rel="shortcut icon" href="./assets/lola_yorik2.jpg">
+	</head>
+	<body>
+        <nav class="navbar">
+            <a href="./assets/lola_yorik9.jpg"><div class="logo">Shlyukha</div></a>
+            <ul class="menu">
+            </ul>
+			<img src="./assets/link-solid.svg" alt="lien" class="lien" id="copyLink">
+        </nav>
+
+        <p class="intro">Coucou Lola, Je voulais te montrer que tu peux avoir confiance en moi, <br> donc moi et mon frère Flazirr avons créé ce site en espérant qu'il te plaira.</p>
+
+		<div class="separator"></div>
+
+		<div class="liste">
+			<div class="arg">
+				<p class="argtitle">1 - je sais rassurer</p>
+				<p class="argtext">Je sais que je ne suis pas rassurant, mais je sais rassurer. Si besoin, je passerais toute la nuit à parler de tes problèmes. Tu m'appelles, je réponds au quart de tour.</p>
+			</div>
+			<img src="./assets/Screenshot 2023-07-08 170700.png" alt="<3" class="img">
+		</div>
+
+		<div class="separator"></div>
+
+		<div class="liste">
+			<div class="arg">
+				<p class="argtitle">2 - tu ne t'ennuieras jamais</p>
+				<p class="argtext">Ça, je pense que c'est l'aspect où j'ai le moins besoin de m'expliquer. Je pense déjà t'avoir montré rien qu'avec ça :</p>
+			</div>
+			<video src="./assets/VID_58420522_013355_479.mp4" controls class="img"></video>
+		</div>
+
+		<div class="separator"></div>
+
+		<div class="liste">
+			<div class="arg">
+				<p class="argtitle">3 - j'accepte tout</p>
+				<p class="argtext">Je pense que ce site sera prêt après, mais lundi tu vas me faire les ongles. J'accepte toutes les bêtises sans broncher, et ça, ce n'est pas tout le monde qui le fait.</p>
+			</div>
+			<img src="./assets/Screenshot 2023-07-08 170815.png" alt="<3" class="img" id="video">
+		</div>
+
+		<div class="separator"></div>
+
+		<div class="liste">
+			<div class="arg">
+				<p class="argtitle">POUR QUE L'ON DEVIENNE UN COUPLE QUI NE SE SÉPARE JAMAIS</p>
+			</div>
+			<img src="./assets/Screenshot 2023-07-08 170631.png" alt="<3" class="img_1">
+			<img src="./assets/Screenshot 2023-07-08 171101.png" alt="<3" class="img_1">
+		</div>
+
+		<footer class="footer">
+			Copywirte 2023 - <a href="https://www.instagram.com/flazirr/" class="footer_link" target="_blank">Flazirr © </a>&<a href="https://www.instagram.com/yokx_afl" class="footer_link" target="_blank"> Yorik ©</a>
+		  </footer>
+		  
+
+		<script>
+			document.getElementById("copyLink").addEventListener("click", function() {
+				var link = window.location.href;
+				navigator.clipboard.writeText(link)
+					.then(function() {
+						alert("Le lien a été copié !");
+					})
+					.catch(function(error) {
+						alert("Erreur lors de la copie du lien : " + error);
+					});
+			});
+
+			var video = document.getElementById("video");
+			if (window.matchMedia('(max-width: 414px)').matches) {
+				video.addEventListener("click", function() {
+					if (video.paused) {
+						video.play();
+					} else {
+						video.pause();
+					}
+				});
+			}
+		</script>
+	</body>
+</html>
